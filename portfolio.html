@@ -61,10 +61,10 @@
                 </div>
             </div>
             <div class="contentbox">
-                <div class="">
+                <div class="about" id="about">
                     <p>– Dre Onyi Anozie</p>
-                    <h1>I'm a Software Developer and Designer</h1>
-                    <p>With a focus in frontend development and ui/ux design. I enjoy building responsive, sustainable applications that empathize to solve user problems.</p>
+                    <h1>I'm a <span>Software Developer and Designer</span></h1>
+                    <p class="contentP">With a focus in frontend development and ui/ux design. I enjoy building responsive, sustainable applications that empathize to solve user problems.</p>
                     <div class="tools">
                         <h2>Tool Stack:</h2>
                         <div class="icon_container one">
@@ -79,9 +79,8 @@
                             <i class="fab fa-figma"></i>
                             <i class="fab fa-invision"></i>
                         </div>
-                        <a href="" class="button">Download CV</a>
                     </div>
-                   
+                    <button><a href="" class="headerButton">Download CV</a></button>
                 </div>
                 <div class="">
                     <!-- <img src="./images/portrait.jpg" alt="self_portrait"> -->
@@ -89,29 +88,28 @@
             </div>
         </div>
         <div class="headerR">
-            <img src="" alt="self_portrait">
         </div>
     </header>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="skillsContainer">
-            <p class="titles">Skills</p>
+            <p  class="sectionTitle">Skills</p>
             <ul>
-                <li class="transiton2">
+                <li class="transition2">
                     <div class="iconContainer one">
                         <i class="fas fa-layer-group"></i>
                     </div>
                     <p class="skillTitle">Frontend Development</p>
                     <p class="featuredDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla similique consectetur unde magnam incidunt consequuntur facilis, natus, ab dignissimos obcaecati odit a quos repellendus iste adipisci accusamus numquam? Molestias.</p>
                 </li>
-                <li class="transiton2">
+                <li class="transition2">
                     <div class="iconContainer two">
                         <i class="fas fa-pen-nib"></i>
                     </div>
                     <p class="skillTitle">UI UX Design</p>
                     <p class="featuredDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo nulla similique consectetur unde magnam incidunt consequuntur facilis, natus, ab dignissimos obcaecati odit a quos repellendus iste adipisci accusamus numquam? Molestias.</p>
                 </li>
-                <li class="transiton2">
+                <li class="transition2">
                     <div class="iconContainer three">
                         <i class="fas fa-bullhorn"></i>
                     </div>
@@ -122,15 +120,15 @@
         </div>
     </section>
 
-    <section class="portfolio">
-        <p class="titles">Portfolio</p>
+    <section class="portfolio" id="projects">
+        <p class="sectionTitle">Projects</p>
         <div class="portfolioContainer">  
             <div class="portfolioLeft">
                 <div class="inner">
                     <p class="subtitle">Sophie's Blog</p>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore, nihil sit tempore debitis, placeat labore sapiente quis esse ratione deleniti est! Quasi culpa corporis ab repellendus maxime, saepe quaerat?</p>
-                    <a href="" class="button">Live View</a>
+                    <button><a href="https://sophiesblog.netlify.app/" class="foliobutton">Live View</a></button>
                 </div>
             </div>
             <img src="./images/Sophie.png" alt="">
@@ -140,7 +138,7 @@
                     <p class="subtitle">Cinema Hunters</p>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore, nihil sit tempore debitis, placeat labore sapiente quis esse ratione deleniti est! Quasi culpa corporis ab repellendus maxime, saepe quaerat?</p>
-                    <a href="" class="button">Live View</a>
+                    <button><a href="https://cinemahuntermovies.netlify.app/" class="foliobutton">Live View</a></button>
                 </div>
             </div>
             <img src="./images/C.pnginema Hunters.png" alt="">
@@ -148,8 +146,8 @@
                 <div class="inner">
                     <p class="subtitle">Giph Generator</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore, nihil sit tempore debitis, placeat labore sapiente quis esse ratione deleniti est! Quasi culpa corporis ab repellendus maxime, saepe quaerat?</p>
-                    <a href="" class="button">Live View</a>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolore, nihil sit tempore debitis, placeat labore sapiente quis esse ratione deleniti est! Quasi culpa corporis ab repellendus maxime, saepe quaerat?</p>
+                    <button><a href="https://giphygen.netlify.app/" class="foliobutton">Live View</a></button>
                 </div>
             </div>
             <img src="./images/giphapp.png" alt="">
@@ -157,11 +155,11 @@
 
     </section>
 
-    <section class="form" id="#contact">
-        <h2>Contact Me</h2>
+    <section class="form" id="contact">
+        <p class="sectionTitle">Contact Me</p>
         <div class="contactform">
-            <div class="formLeft">
-                <h2 class="sectionTitle">Keep In Touch</h2>
+            <div class="formbox left">
+                <h2 class="">Find me on social!</h2>
                 <div class="socialIcons">
                     <i class="fab fa-github"></i>
                     <i class="fab fa-linkedin-in"></i>
@@ -171,31 +169,27 @@
                 </div>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non quasi, corporis distinctio, laboriosam ipsum quam rerum consequuntur odio animi beatae vitae. Doloremque minima, enim excepturi assumenda veritatis asperiores facilis tenetur!</p>
             </div>
-            <div class="formRight">
+            <div class="formbox right">
                 <div class="contactForm grid">
                     <div class="contactInput_grid">
                         <div class="contactContent">
-                            <label for="" class="contacLabel">Name</label>
-                            <input type="text" class="contactInput">
+                            <label for="" class="contactLabel">Name</label>
+                            <input type="text" class="contactInput" placeholder="John Bond">
                         </div>
                         <div class="contactContent">
-                            <label for="" class="contacLabel">Email</label>
-                            <input type="email" class="contactInput">
+                            <label for="" class="contactLabel" >Email</label>
+                            <input type="email" class="contactInput" placeholder="john@bond.com">
                         </div>
                         <div class="contactContent">
-                            <label for="" class="contacLabel">Project</label>
-                            <input type="radio" class="contactInput">
+                            <label for="" class="contactLabel">Project</label>
+                            <input type="text" class="contactInput" placeholder="project name">
                         </div>
                         <div class="contactContent">
-                            <label for="" class="contacLabel">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contactInput"></textarea>
+                            <label for="" class="contactLabel">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contactInput" placeholder="Spill the tea!"></textarea>
                         </div>
-
-                        <div>
-                            <a href="#" class="button buttonFlex">Submit<i class="fas fa-paper-plane" class="buttonIcon"></i></a>
-                            
-                        </div>
-
+                        <button class="foliobutton">Submit<i class="fas fa-paper-plane"></i></button>
+                        <!-- <button><a href="#" class="contactButton">Submit<i class="fas fa-paper-plane"></i></a></button> -->
                     </div>
                 </div>
             </div>
@@ -203,7 +197,7 @@
     </section>
 
     <footer>
-        <p>designed and developed by @ikAnozie</p>
+        <p>designed and developed by Dre</p>
     </footer>
 </body>
 </html>

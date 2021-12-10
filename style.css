@@ -221,6 +221,8 @@ header{
 } */
 /* ------------------------ TESTER HEADER, PLEASE NEGLECT---------- */
 
+
+
 /* SKILLS */
 
 .titles{
@@ -272,6 +274,7 @@ header{
     margin-bottom: 2em;
 }
 
+
 /* PORTFOLIO */
 .portfolio{
     background-color: #6f6d6d;
@@ -318,6 +321,8 @@ header{
     padding: 30px 0;
 
 }
+
+
 /* CONTACT FORM */
 .form{
     background-color: #1E1E1E;
@@ -343,12 +348,10 @@ header{
     padding: .75rem 1rem .25rem;
     margin: 10px;
 }
-
 .contactLabel{
     font-size: 1em;
     color: #C4C4C4;
 }
-
 .contactInput{
     width: 100%;
     background-color: rgb(108, 107, 107);
@@ -361,6 +364,7 @@ header{
     
 }
 
+
 /* FOOTER */
 footer{
     background-color: #6f6d6d;
@@ -371,6 +375,7 @@ footer{
 footer p{
     font-size: 20px;
 }
+
 
 /* MEDIA QUERIES */
 
@@ -457,7 +462,6 @@ footer p{
     }
     
 }
-
 @media only screen and (min-width: 1050px){
 
     /* .hero{
@@ -510,7 +514,6 @@ footer p{
     }
    
 }
-
 @media only screen and (min-width: 1376px){
     .headerR{
         display: block;

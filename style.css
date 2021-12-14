@@ -71,6 +71,8 @@ ul li a:hover{
 /*  HEADER  */
 
 nav{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 100px;
     padding: 20px 0;
@@ -119,13 +121,6 @@ button{
     line-height: 21px;
     color: #dbd3d3;
     cursor: pointer;
-}
-.otherBtn:hover{
-    background-color: #86755f
-   
-}
-.otherBtn a:hover{
-    color: #1E1E1E;
 }
 .leftContainer{
     background-color: #1e1e1e;
@@ -183,10 +178,25 @@ button{
     transition: all 1s ease-in-out;
     cursor: pointer;
 }
+.hamburger{
+    background-color: transparent;
+    border: 0;
+    color: #94764E;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0;
+
+}
+.hamburger:focus{
+    outline: none;
+}
 .signature{
     font-family: "Tuesday Night";
     font-size: 50px;
     color: #000;
+}
+.tools{
+    padding: 20px 0;
 }
 
 
@@ -237,6 +247,9 @@ button{
 }
 .featuredDesc a:hover{
     color: #1E1E1E;
+}
+.skillTitle{
+    font-weight: bold;
 }
 
 /* PROJECTS */
@@ -411,8 +424,16 @@ footer a{
 }
 .contactLinks{
     margin-bottom: 30px;
-
-    
+    display: flex;
+    justify-content: center;   
+}
+.otherBtn:hover{
+    background-color: #b9ab99;
+    color: #1E1E1E;
+   
+}
+.otherBtn a:hover{
+    color: #1E1E1E;
 }
 
 
@@ -429,4 +450,114 @@ footer p{
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 1025px){
+    nav ul{
+        display: none;
+    }
+    .leftContainer{
+        background-color: #1e1e1e;
+        border-top-right-radius: unset;
+        border-bottom-right-radius: unset;
+    }
+    .rightContainer{
+        display:none;
+    }
+    .heroContent{
+        text-align: center;
+    }
 
+    .contactPhoto{
+        width: 60%;
+    }
+    .otherBtn{
+        padding: 15px 25px;
+        margin: 5px 5px;
+        font-size: 15px;
+    }
+    .otherBtn:hover{
+        content: '';
+
+    }
+    .icon_container{
+        justify-content: center;
+    }
+    .heroP{
+        text-align: start;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .iconright a{
+        padding: 0;
+    }
+   
+    .iconright .fab{
+        padding: 5px;
+        margin: 0;
+    }
+    .liveLinks{
+        flex-wrap: wrap;
+    }
+
+
+    .left{
+         width: 45%;
+    }
+   .sectionTitle{
+       font-size: 80px;
+   }
+}
+@media only screen and (max-width: 1455px){
+    h1{
+        font-size: 60px;
+        line-height: 69px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .tools h2{
+        font-size: 20px;
+    }
+    .fab, .fas{
+        font-size: 25px;
+    }
+    /* .hamburger{
+        display: none;
+    } */
+    
+}
+
+
+
+@media screen and (max-width:836px)
+ {
+     .skillscontainer ul{
+         flex-direction: column;
+    }
+    .skillscontainer ul li{
+        padding: 60px;
+    }
+    
+    .projectContainer{
+        flex-direction: column;
+        padding: 0 30px;
+    }
+    .formbox{
+        width: 100%;
+    }
+    .contactform{
+       
+        flex-direction: column-reverse;
+    }
+    .contact2{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .contactLinks{
+        width: 100%;
+        justify-self: unset;
+    }
+    .right{
+        padding-left: 60px;
+    }
+}

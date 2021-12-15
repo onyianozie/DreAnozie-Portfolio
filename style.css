@@ -122,6 +122,14 @@ button{
     line-height: 21px;
     color: #dbd3d3;
     cursor: pointer;
+
+    transition: all 1s ease-in-out;
+
+}
+button:hover{
+    box-shadow: 10px 10px 0px 0px rgba(128, 119, 101, 0.5);
+    cursor: pointer;
+    padding:20px;
 }
 .leftContainer{
     background-color: #1e1e1e;
@@ -210,7 +218,9 @@ button{
 
 }
 .tools{
-    padding: 20px 0;
+    margin: 20px 0;
+    width: 100%;
+
 }
 
 
@@ -252,9 +262,7 @@ button{
     border-radius: 1em;
     /* margin-bottom: 1em; */
 }
-.tools{
-    width: 100%;
-}
+
 .featuredDesc a{
     color: #94764E;
     padding: 0;
@@ -396,7 +404,14 @@ footer a{
     justify-content: space-evenly;
     padding: 70px;
     width: 40%;
+
+    transition: all 1s ease-in-out;
     
+}
+.left:hover{
+    box-shadow: 20px 20px 0px 0px rgba(128, 119, 101, 0.5);
+    cursor: pointer;
+    padding:40px;
 }
 .left h2{
     font-size: 30px;
@@ -451,7 +466,6 @@ footer a{
     transition: all 1s ease-in-out;
 }
 .otherBtn:hover{
-    background-color: #b9ab99;
     color: #1E1E1E;
     margin-top: 20px;
    
@@ -480,16 +494,23 @@ footer p{
         display: none;
     }
     h1{
-        font-size: 30px;
+        font-size: 25px;
         line-height: 39px;
-        width: 100%;
+        width:100%;
     }
+
     .contactPhoto{
         width: 100%;
         padding: 0;
         margin: 30px;
 
     }
+
+    /* .icon_container.fab{
+        font-size: 20px;
+        margin: 10px;
+
+    } */
   
   
    
@@ -508,8 +529,7 @@ footer p{
     }
     .skillscontainer ul li{
         padding: 60px;
-    }
-    
+    }   
     .projectContainer{
         flex-direction: column;
         padding: 0 30px;
@@ -541,10 +561,10 @@ footer p{
     .left, .socialIcons{
         text-align: center;
     }
-     .second{
+     .signature.second{
         color: #C4C4C4;
-        font-size: 40px;
-
+        font-size: 30px;
+        display: block;
     }
 
 
@@ -631,9 +651,6 @@ footer p{
         display: none;
 
     }
- /* .signature{
-        display: none;
-    } */
     /* .hamburger{
         display: none;
     } */

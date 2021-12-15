@@ -19,7 +19,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     --main-bg-color: #d1c8b8;
     --main-txt-color: #1E1E1E;
     --container-width: 90%; 
-    --hero-font: "Forum" cursive, 72px;
+    --hero-font: "Forum" cursive, 60px;
     --subtitle-font: "Forum", 50px;
 }
 *{
@@ -100,7 +100,7 @@ h1{
     font-size: 60px;
     font-style: normal;
     font-weight: normal;
-    line-height: 79px;
+    line-height: 69px;
     margin: 30px 0;
 }
 span{
@@ -109,6 +109,9 @@ span{
 }
 h2 span{
     border-bottom: #C4C4C4 solid 1px;
+}
+h2{
+    font-family: "Forum";
 }
 button{
     background: #94764E;
@@ -153,7 +156,8 @@ button:hover{
     align-items: center;
     transition: all 1s ease-in-out;
 
-}.portrait{
+}
+.portrait{
     border-radius: 50px;
     width: 100%;
     height: 100%;
@@ -262,7 +266,6 @@ button:hover{
     border-radius: 1em;
     /* margin-bottom: 1em; */
 }
-
 .featuredDesc a{
     color: #94764E;
     padding: 0;
@@ -338,10 +341,6 @@ button:hover{
 .iconright a {
     margin: 0;
     padding: 0;
-}
-
-footer a{
-    padding: 0 0;
 }
 .liveLinks .fab, .iconright a .fas {
     font-size: 20px;
@@ -483,11 +482,35 @@ footer{
     text-align: center;
     padding: 20px;
 }
+footer a{
+    padding: 0 0;
+}
 footer p{
     font-size: 20px;
 }
 
 /* MEDIA QUERIES */
+
+@media screen and (max-width: 375px){
+   .sectionTitle{
+       line-height: 65px;
+   } 
+   .leftContainer{
+
+   }
+   /* .heroContent h1{
+       font-size: 30px;
+       line-height: 39px;
+    
+   } */
+   .heroP{
+       font-size: 10px;
+       line-height: 15px;
+   }
+   .icon_container.fab{
+       font-size: 10px;
+   }
+}
 
 @media screen and (max-width: 585px){
     nav{
@@ -521,8 +544,8 @@ footer p{
     } */
     
     .heroContent h1{
-        font-size: 50px;
-        line-height: 59px;
+        font-size: 30px;
+        line-height: 35px;
     }
      .skillscontainer ul{
          flex-direction: column;

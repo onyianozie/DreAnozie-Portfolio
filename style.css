@@ -31,6 +31,7 @@ body{
     padding: 0;
     height: 100vh;
     width: 100%;
+    max-width: 1680px;
     background-color: var(--main-bg-color);
     font-family: 'Forum' serif;
     background-color: #d1c8b8;
@@ -445,9 +446,14 @@ footer a{
     display: flex;
     justify-content: center;   
 }
+
+.otherBtn{
+    transition: all 1s ease-in-out;
+}
 .otherBtn:hover{
     background-color: #b9ab99;
     color: #1E1E1E;
+    margin-top: 20px;
    
 }
 .otherBtn a:hover{
@@ -479,8 +485,13 @@ footer p{
         width: 100%;
     }
     .contactPhoto{
-        width: 60%;
+        width: 100%;
+        padding: 0;
+        margin: 30px;
+
     }
+  
+  
    
 }
 @media screen and (max-width: 836px){

@@ -423,11 +423,10 @@ button:hover{
     padding-right: 60px;
 }
 .sectionTitle{
-    padding: 20px;
     font-family: 'Forum';
     font-style: normal;
     font-weight: normal;
-    font-size: 100px;
+    font-size: 80px;
     line-height: 221px;
     text-align: center;
     border-bottom: #94764E solid 1px;
@@ -494,7 +493,9 @@ footer p{
 @media screen and (max-width: 375px){
    .sectionTitle{
        line-height: 65px;
+       
    } 
+ 
    /* .leftContainer{
 
    } */
@@ -517,28 +518,21 @@ footer p{
     nav{
         display: none;
     }
-    h1{
-        font-size: 25px;
-        line-height: 39px;
-        width:100%;
-    }
-
     .contactPhoto{
         width: 100%;
         padding: 0;
         margin: 30px;
 
     }
-
-    /* .icon_container.fab{
-        font-size: 20px;
-        margin: 10px;
-
-    } */
     .icon_container .fab{
         font-size: 20px;
     }
-  
+    .skill.sectionTitle{
+        font-size: 20px;
+    }
+    .sectionTitle{
+        font-size: 50px;
+    }
    
 }
 @media screen and (max-width: 836px){
@@ -547,14 +541,14 @@ footer p{
     } */
     
     .heroContent h1{
-        font-size: 30px;
-        line-height: 35px;
+        font-size: 40px;
+        line-height: 45px;
     }
      .skillscontainer ul{
          flex-direction: column;
     }
     .skillscontainer ul li{
-        padding: 60px;
+        padding: 30px;
     }   
     .projectContainer{
         flex-direction: column;
@@ -645,9 +639,7 @@ footer p{
     .liveLinks{
         flex-wrap: wrap;
     }
-   .sectionTitle{
-       font-size: 80px;
-   }
+  
 }
 @media screen and (max-width: 1137px){
     .rightContainer{

@@ -423,6 +423,7 @@ button:hover{
     padding-right: 60px;
 }
 .sectionTitle{
+    padding: 30px;
     font-family: 'Forum';
     font-style: normal;
     font-weight: normal;

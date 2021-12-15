@@ -294,14 +294,16 @@ button{
     /* border: 3px solid #1E1E1E; */
     padding: 20px;
     border-radius: 20px;
-    transition: 0.3s;
+    transition: all 1s ease-in-out;
     margin: 10px;
     max-width: 100%;
+    
 
 }
 .projectCard:hover{
-    box-shadow: 0 4px 20px 0 rgba(209, 179, 79, 0.2);
+    box-shadow: -12px 20px 0px 0 rgba(20, 20, 20, .5);
     cursor: pointer;
+    margin:20px;
 }
 .cardContent{
     padding: 1em;
@@ -311,9 +313,6 @@ button{
 
     color: #94764E;
 }
-/* .cardContent .cardDesc{
-
-} */
 .wrapper .two{
     color: #1E1E1E;
 }

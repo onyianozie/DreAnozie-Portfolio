@@ -495,9 +495,9 @@ footer p{
    .sectionTitle{
        line-height: 65px;
    } 
-   .leftContainer{
+   /* .leftContainer{
 
-   }
+   } */
    /* .heroContent h1{
        font-size: 30px;
        line-height: 39px;
@@ -507,9 +507,10 @@ footer p{
        font-size: 10px;
        line-height: 15px;
    }
-   .icon_container.fab{
-       font-size: 10px;
+   .otherBtn a{
+       padding: 0;
    }
+   
 }
 
 @media screen and (max-width: 585px){
@@ -534,7 +535,9 @@ footer p{
         margin: 10px;
 
     } */
-  
+    .icon_container .fab{
+        font-size: 20px;
+    }
   
    
 }

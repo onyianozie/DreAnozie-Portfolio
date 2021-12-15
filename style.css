@@ -47,7 +47,6 @@ img:hover{
 }
 
 
-
 /*  NAVIGATION  */
 
 ul{
@@ -74,7 +73,6 @@ nav{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 100px;
     padding: 20px 0;
 
 }
@@ -83,8 +81,10 @@ header{
     justify-content: space-between;
     width: 100%;
     color: #C4C4C4;
-    height: 100%;
-    /* gap: 2em; */
+    height: 100vh;
+    /* gap: 1em; */
+
+    
 }
 .heroP{
     font-family: Tenor Sans;
@@ -96,7 +96,7 @@ header{
 }
 h1{
     font-family: 'Forum';
-    font-size: 72px;
+    font-size: 60px;
     font-style: normal;
     font-weight: normal;
     line-height: 79px;
@@ -126,25 +126,32 @@ button{
     background-color: #1e1e1e;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    padding: 5em;
+    padding: 50px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    transition: all 1s ease-in-out;
 }
 .rightContainer{
-    padding: 2em 5em;
+    padding: 2em 3em;
     background-color: #d1c8b8;
     display: flex;
     flex-direction: column;
-    justify-self: center;
+    justify-content: center;
     align-items: center;
+    transition: all 1s ease-in-out;
 
-}
-.portrait{
-    border-radius: 30px;
-    
+}.portrait{
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px;
+    object-fit: contain;
+    /* box-shadow: 40px 40px 30px rgba(0,0,0,0.3);
+    background-color:#1e1e1e */
 }
 .icon_container{
     display: flex;
@@ -185,6 +192,7 @@ button{
     cursor: pointer;
     font-size: 20px;
     padding: 0;
+    display: none;
 
 }
 .hamburger:focus{
@@ -194,6 +202,11 @@ button{
     font-family: "Tuesday Night";
     font-size: 50px;
     color: #000;
+}
+.second{
+    color: #C4C4C4;
+    font-size: 40px;
+
 }
 .tools{
     padding: 20px 0;
@@ -282,7 +295,7 @@ button{
     border-radius: 20px;
     transition: 0.3s;
     margin: 10px;
-    width: 100%;
+    max-width: 100%;
 
 }
 .projectCard:hover{
@@ -345,6 +358,7 @@ footer a{
     justify-content: space-between;
     padding-bottom: 50px;
     height: auto;
+    align-items: center;
 }
 .formbox{
     width:45%;
@@ -380,9 +394,8 @@ footer a{
     flex-direction: column;
     justify-content: space-evenly;
     padding: 70px;
-    width: 35%;
-    /* box-shadow: #94764E solid 2px; */
-   
+    width: 40%;
+    
 }
 .left h2{
     font-size: 30px;
@@ -416,11 +429,16 @@ footer a{
   
 }
 .contactPhoto{
-    width: 40%;
+    width: 50%;
     border-radius:50%;
-    margin: 30px 0;
     padding: 30px;
-    
+
+    transition: all 1s ease-in-out;
+  
+}
+.contactPhoto:hover{
+    cursor: pointer;
+    margin-top: 20px;
 }
 .contactLinks{
     margin-bottom: 30px;
@@ -450,87 +468,30 @@ footer p{
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1025px){
-    nav ul{
+
+@media screen and (max-width: 585px){
+    nav{
         display: none;
     }
-    .leftContainer{
-        background-color: #1e1e1e;
-        border-top-right-radius: unset;
-        border-bottom-right-radius: unset;
+    h1{
+        font-size: 30px;
+        line-height: 39px;
+        width: 100%;
     }
-    .rightContainer{
-        display:none;
-    }
-    .heroContent{
-        text-align: center;
-    }
-
     .contactPhoto{
         width: 60%;
     }
-    .otherBtn{
-        padding: 15px 25px;
-        margin: 5px 5px;
-        font-size: 15px;
-    }
-    .otherBtn:hover{
-        content: '';
-
-    }
-    .icon_container{
-        justify-content: center;
-    }
-    .heroP{
-        text-align: start;
-    }
-    h1{
-        font-size: 50px;
-    }
-    .iconright a{
-        padding: 0;
-    }
    
-    .iconright .fab{
-        padding: 5px;
-        margin: 0;
-    }
-    .liveLinks{
-        flex-wrap: wrap;
-    }
-
-
-    .left{
-         width: 45%;
-    }
-   .sectionTitle{
-       font-size: 80px;
-   }
 }
-@media only screen and (max-width: 1455px){
-    h1{
-        font-size: 60px;
-        line-height: 69px;
-    }
-    p{
-        font-size: 15px;
-    }
-    .tools h2{
-        font-size: 20px;
-    }
-    .fab, .fas{
-        font-size: 25px;
-    }
-    /* .hamburger{
+@media screen and (max-width: 836px){
+    /* nav{
         display: none;
     } */
     
-}
-
-
-
-@media screen and (max-width:836px)
- {
+    .heroContent h1{
+        font-size: 50px;
+        line-height: 59px;
+    }
      .skillscontainer ul{
          flex-direction: column;
     }
@@ -546,7 +507,6 @@ footer p{
         width: 100%;
     }
     .contactform{
-       
         flex-direction: column-reverse;
     }
     .contact2{
@@ -560,4 +520,112 @@ footer p{
     .right{
         padding-left: 60px;
     }
+    .formbox .left {
+        width: 100%;
+    }
+    .leftContainer{
+        border-bottom-left-radius: 30px;
+        /* border-bottom-right-radius: 30px; */
+    }
+    .left, .socialIcons{
+        text-align: center;
+    }
+     .second{
+        color: #C4C4C4;
+        font-size: 40px;
+
+    }
+
+
 }
+@media screen and (max-width: 1025px){
+    /* nav ul{
+        display: none;
+    } */
+    /* nav{
+        justify-content: center;
+    } */
+    /* .icon_container{
+        justify-content: center;
+    } */
+    /* .heroContent{
+        text-align: center;
+    } */
+   
+    .leftContainer{
+        background-color: #1e1e1e;
+        border-top-right-radius: unset;
+        border-bottom-right-radius: unset;
+    }
+    .rightContainer{
+        display:none;
+    }
+    .contactPhoto{
+        width: 40%;
+    }
+    .otherBtn{
+        padding: 15px 25px;
+        margin: 5px 5px;
+        font-size: 15px;
+    }
+    .otherBtn:hover{
+        content: '';
+
+    }
+    
+    .heroP{
+        text-align: start;
+    }
+
+    .iconright a{
+        padding: 0;
+    }
+   
+    .iconright .fab{
+        padding: 5px;
+        margin: 0;
+    }
+    .liveLinks{
+        flex-wrap: wrap;
+    }
+   .sectionTitle{
+       font-size: 80px;
+   }
+}
+@media screen and (max-width: 1137px){
+    .rightContainer{
+        display: none;
+    }
+    .leftContainer{
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: unset;
+
+    }
+}
+@media screen and (max-width: 1455px){
+    h1{
+        font-size: 60px;
+        line-height: 69px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .tools h2{
+        font-size: 20px;
+    }
+    .fab, .fas{
+        font-size: 25px;
+    }
+    .second{
+        display: none;
+
+    }
+ /* .signature{
+        display: none;
+    } */
+    /* .hamburger{
+        display: none;
+    } */
+    
+}
+

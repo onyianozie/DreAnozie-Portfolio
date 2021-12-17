@@ -449,8 +449,9 @@ button:hover{
   
 }
 .contactPhoto{
-    width: 50%;
+    width: 250px;
     border-radius:50%;
+    margin: 20px 0;
     padding: 30px;
 
     transition: all 1s ease-in-out;
@@ -465,7 +466,6 @@ button:hover{
     display: flex;
     justify-content: center;   
 }
-
 .otherBtn{
     transition: all 1s ease-in-out;
 }
@@ -513,7 +513,6 @@ footer p{
    }
    
 }
-
 @media screen and (max-width: 585px){
     nav{
         display: none;
@@ -525,7 +524,7 @@ footer p{
 
     }
     .icon_container .fab{
-        font-size: 20px;
+        font-size: 30px;
     }
     .skill.sectionTitle{
         font-size: 20px;
@@ -541,8 +540,8 @@ footer p{
         
     } 
     .heroP{
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 12px;
+        line-height: 17px;
     }
 }
 @media screen and (max-width: 836px){
@@ -619,7 +618,6 @@ footer p{
     .heroP{
         text-align: start;
     }
-
     .iconright a{
         padding: 0;
     }
@@ -641,12 +639,10 @@ footer p{
         border-bottom-left-radius: 30px;
         border-top-right-radius: unset;
         width: 100%;
-
     }
     .icon_container .fab{
-        font-size: 20px;
+        font-size: 25px;
     }
-   
 
 }
 @media screen and (max-width: 1606px){
@@ -662,10 +658,6 @@ footer p{
     }
     .fab, .fas{
         font-size: 25px;
-    }
-    .second{
-        display: none;
-
     }
     nav{
         margin-top: 40px;

@@ -8,108 +8,96 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-/* @import url('https://fonts.googleapis.com/css2?family=Forum&family=Poppins:wght@400;800&family=Tenor+Sans&display=swap'); */
-        
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border-radius: 20px; */
+    /* margin: 0 auto; */
+}
 @font-face{
     font-family: "Tuesday Night";
     src: url(./TuesdayNight-Regular.otf);
 }
-
 :root{
     --main-bg-color: #d1c8b8;
     --main-txt-color: #1E1E1E;
     --container-width: 90%; 
-    --hero-font: "Forum" cursive, 60px;
+    --hero-font: "Forum", 60px;
     --subtitle-font: "Forum", 50px;
 }
-*{
-    box-sizing: border-box;
-    /* border: teal 1px solid; */
-}
 body{
-    margin: 0 auto;
-    padding: 0;
-    height: 100vh;
     background-color: var(--main-bg-color);
-    font-family: 'Forum' serif;
-    background-color: #d1c8b8;
-}
-.wrapper{
-    max-width: 1440px;
-    margin: 0 auto;
-}
-.projectCard img{
-    filter:grayscale(90%)
-}
-img:hover{
-    filter: unset;
-}
-
-
-/*  NAVIGATION  */
-
-ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    
-}
-a{
-    text-decoration: none;
-    padding: 0 1em;
-    /* color: #1E1E1E; */
-    color: #C4C4C4;
-}
-ul li a:hover{
-    color: #94764E;
-}
-
-
-/*  HEADER  */
-
-nav{
-    display: flex;
-    justify-content: space-between;
+    color: black;
+    font-size: 14px;
+    line-height: 21px;
+    /* max-width: 1445px; */
     width: 100%;
-    padding: 20px 0;
-
+    height: 100vh;
+    font-family: 'Forum' serif;
 }
 header{
     display: flex;
+    flex-direction: column;
+    height: 100%;
+    font-family: var(--hero-font);
+}
+nav{
+    display: flex;
     justify-content: space-between;
-    width: 100%;
-    color: #C4C4C4;
-    height: 100vh;
-    /* gap: 1em; */
-
+    margin: 20px 0;
+    width: 60%;
+}
+li{
+    list-style: none;
+    margin: 10px 0;
+}
+li a:hover{
+    color: #94764E;
+}
+a{
+    text-decoration: none;
+    color: beige;
+}
+img{
+    width: 80%;
+    /* padding: 36px; */
+    border-radius: 20px;
+  
+}
+.header-contents{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
     
 }
-.heroP{
-    font-family: Tenor Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 20px;
-    padding-bottom: 10px;
+.signature{
+    font-family: "Tuesday Night";
+    font-size: 30px;
+    /* margin: 20px 0; */
+    color: #000;
 }
-h1{
-    font-family: 'Forum';
-    font-size: 60px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 69px;
-    margin: 30px 0;
-}
-span{
-    color: #94764E;
+.left-container{
+    background: #1e1e1e;
+    color:beige;
+    width: 60%;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:40px;
    
 }
-h2 span{
-    border-bottom: #C4C4C4 solid 1px;
-}
-h2{
-    font-family: "Forum";
+.right-container{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 40px; */
+    /* margin: 20px 0; */
 }
 button{
     background: #94764E;
@@ -119,7 +107,6 @@ button{
     border-radius: 10px;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
     line-height: 21px;
     color: #dbd3d3;
     cursor: pointer;
@@ -132,49 +119,14 @@ button:hover{
     cursor: pointer;
     padding:20px;
 }
-.leftContainer{
-    background-color: #1e1e1e;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-    padding: 50px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transition: all 0.2s ease-in-out;
-    width: 50%;
-}
-.rightContainer{
-    padding: 2em 3em;
-    background-color: #d1c8b8;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 1s ease-in-out;
-    width: 50%;
-
-}
-.portrait{
-    border-radius: 50px;
-    width: 100%;
-    height: 80%;
-    padding: 30px 20px;
-    object-fit: contain;
-    /* box-shadow: 40px 40px 30px rgba(0,0,0,0.3);
-    background-color:#1e1e1e */
-}
 .icon_container{
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 30px;
 }
-
 .fab, .fas{
-    font-size: 30px;
-    margin: 10px 10px;
+    font-size: 20px;
+    margin: 8px 8px;
     color: #94764E;
 
     transition: all 1s ease-in-out;
@@ -184,60 +136,60 @@ button:hover{
     /* color: #94764E; */
     border: #9b9b9b 1px solid;
     border-radius: 20px;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 8px;
+    margin-top: 8px;
 }
-.icon_container .fab{
+/* .icon_container .fab{
     font-size: 25px;
-}
-.fa-long-arrow-alt-down{
-    font-size: 40px; 
-    text-align: center;
-    justify-content: center;
-    font-weight:thin;
-    position: relative;
-    padding-bottom: 40px;
-    left: 400px;
-    top: 100px;
-
-    transition: all 1s ease-in-out;
-    cursor: pointer;
-}
-.hamburger{
-    background-color: transparent;
-    border: 0;
-    color: #94764E;
-    cursor: pointer;
-    font-size: 20px;
-    padding: 0;
-    display: none;
-
-}
-.hamburger:focus{
-    outline: none;
-}
-.signature{
-    font-family: "Tuesday Night";
-    font-size: 30px;
-    color: #000;
-}
-.second{
-    color: #C4C4C4;
+} */
+h1{
+    font-family: 'Forum';
     font-size: 40px;
-
+    font-style: normal;
+    font-weight: normal;
+    line-height: 49px;
+    margin: 30px 0;
 }
-.tools{
-    margin: 20px 0;
-    width: 100%;
-
+span{
+    color: #94764E;
+   
+}
+h2 span{
+    border-bottom: #C4C4C4 solid 1px;
+}
+h1, h2{
+    margin: 10px 0;
+}
+.heroP{
+    font-family: Tenor Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 20px;
+    padding-bottom: 10px;
 }
 
+/*  HEADER ENDS */
 
-/* SKILLS */
+
+
+/* SKILLS SECTION STARTS */
 
 .titles{
     font-size: 2em;
     color: #1E1E1E;
+}
+.sectionTitle{
+    /* padding: 30px; */
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 80px;
+    line-height: 221px;
+    text-align: center;
+    border-bottom: #94764E solid 1px;
+
+    color:#94764E;
+
 }
 .transition2{
     transition: all 1s ease-in-out;
@@ -256,6 +208,8 @@ button:hover{
 .skills{
     width: 100%;
     background-color: #1E1E1E;
+    margin: 30px 0;
+    padding-top: 30px;
 
 
 }
@@ -280,17 +234,28 @@ button:hover{
 }
 .skillTitle{
     font-weight: bold;
+    font-size: 18px;
+}
+p.featuredDesc, .skillTitle{
+ line-height: 18px;
+ margin: 20px 0
 }
 
-/* PROJECTS */
+/* SKILLS SECTION ENDS */
+
+
+
+/* PROJECTS SECTION STARTS*/
 
 .projects{
     width: 100%;
+    
 }
 .projectContainer{
     display: flex;
     justify-content: space-between;
     height: 100%;
+    padding: 30px;
 
 
 }
@@ -351,12 +316,17 @@ button:hover{
     font-size: 20px;
 }
 
-/* CONTACT FORM */
+/* PROJECTS SECTION ENDS*/
+
+
+
+/* CONTACT SECTION STARTS*/
 
 
 .form{
     background-color: #1E1E1E;
     color: #C4C4C4;
+    padding-top: 30px;
     /* padding: 50px; */
 }
 .socialIcons{
@@ -391,8 +361,6 @@ button:hover{
     width: 100%;
     background-color: rgb(108, 107, 107);
     color: #C4C4C4;
-    /* font-family: ;
-    font-size: ; */
     border: none;
     outline: none;
     padding: .25rem .5rem .5rem 0;
@@ -427,25 +395,13 @@ button:hover{
 .right{
     padding-right: 60px;
 }
-.sectionTitle{
-    padding: 30px;
-    font-family: 'Forum';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 80px;
-    line-height: 221px;
-    text-align: center;
-    border-bottom: #94764E solid 1px;
-
-    color:#94764E;
-
-}
 .contact2{
     display: flex;
     flex-direction: column;
     align-items: center;
     border-bottom:#94764E solid 1px;
     border-top:#94764E solid 1px ;
+    margin-top: 40px;
   
 }
 .contactPhoto{
@@ -468,6 +424,7 @@ button:hover{
 }
 .otherBtn{
     transition: all 1s ease-in-out;
+    margin-top: 30px;
 }
 .otherBtn:hover{
     color: #1E1E1E;
@@ -477,9 +434,18 @@ button:hover{
 .otherBtn a:hover{
     color: #1E1E1E;
 }
+.second{
+    color: #C4C4C4;
+    padding-bottom: 20px 0;
+    font-size: 20px;
+
+}
+
+/* PROJECTS SECTION ENDS*/
 
 
-/* FOOTER */
+
+/* FOOTER SECTION STARTS*/
 
 footer{
     background-color: #94764E;
@@ -494,37 +460,79 @@ footer p{
     font-size: 20px;
 }
 
-/* MEDIA QUERIES */
+/* FOOTER SECTION ENDS*/
 
-@media screen and (max-width: 375px){
-  
- 
-   /* .leftContainer{
 
-   } */
-   /* .heroContent h1{
-       font-size: 30px;
-       line-height: 39px;
+@media (max-width: 1200px) {
+	/* rules here apply to devices from 993px to 1200px (inclusive) */
     
-   } */
-   
-   .otherBtn a{
-       padding: 0;
-   }
-   
 }
-@media screen and (max-width: 585px){
-    nav{
+@media (max-width: 992px) {	
+	/* rules here apply to devices from 769px to 992px (inclusive) */
+
+    /* HEADER SECTION */
+    li, p{
+        font-size: 12px;
+        line-height: 17px
+    }
+    .skillscontainer ul{
+        flex-direction: column;
+   }
+   .skillscontainer ul li{
+       padding: 30px;
+   }   
+   .projectContainer{
+       flex-direction: column;
+       padding: 0 30px;
+   }
+   .formbox{
+       width: 100%;
+   }
+   .contactform{
+       flex-direction: column-reverse;
+   }
+   .contact2{
+       flex-direction: column;
+       margin-bottom: 30px;
+   }
+   .contactLinks{
+       width: 100%;
+       justify-self: unset;
+   }
+   .right{
+       padding-left: 60px;
+   }
+   .formbox .left {
+       width: 100%;
+   }
+   .leftContainer{
+       border-bottom-left-radius: 30px;
+       /* border-bottom-right-radius: 30px; */
+   }
+   .left, .socialIcons{
+       text-align: center;
+   }
+    
+}
+@media (max-width: 768px) {
+	/* rules here apply to devices from 0px to 768px (inclusive) */
+
+    .right-container{
         display: none;
     }
-    .contactPhoto{
+    .left-container{
         width: 100%;
-        padding: 0;
-        margin: 30px;
-
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
     }
-    .icon_container .fab{
-        font-size: 30px;
+    h1{
+        font-size: 25px;
+        line-height: 34px;
+    }
+    h2{
+        font-size: 18px;
+        line-height: 24px;
+
     }
     .skill.sectionTitle{
         font-size: 20px;
@@ -532,139 +540,55 @@ footer p{
     .sectionTitle{
         font-size: 50px;
     }
-    .leftContainer{
-        width: 100%;
-    }
     .sectionTitle{
         line-height: 65px;
-        
     } 
-    .heroP{
-        font-size: 12px;
-        line-height: 17px;
+    footer p{
+        font-size: 16px;
     }
+ 
 }
-@media screen and (max-width: 836px){
-    /* nav{
-        display: none;
-    } */
-    
-    
-     .skillscontainer ul{
-         flex-direction: column;
-    }
-    .skillscontainer ul li{
-        padding: 30px;
-    }   
-    .projectContainer{
-        flex-direction: column;
-        padding: 0 30px;
-    }
-    .formbox{
+@media (max-width: 358px){
+    nav{
         width: 100%;
-    }
-    .contactform{
-        flex-direction: column-reverse;
-    }
-    .contact2{
-        flex-direction: column;
-        margin-bottom: 30px;
-    }
-    .contactLinks{
-        width: 100%;
-        justify-self: unset;
-    }
-    .right{
-        padding-left: 60px;
-    }
-    .formbox .left {
-        width: 100%;
-    }
-    .leftContainer{
-        border-bottom-left-radius: 30px;
-        /* border-bottom-right-radius: 30px; */
-    }
-    .left, .socialIcons{
-        text-align: center;
-    }
-     .signature.second{
-        color: #C4C4C4;
-        font-size: 30px;
-        display: block;
-    }
-
-
-}
-@media screen and (max-width: 1025px){
-    
-   
-    .leftContainer{
-        background-color: #1e1e1e;
-        border-top-right-radius: unset;
-        border-bottom-right-radius: unset;
-    }
-    .rightContainer{
-        display:none;
-    }
-    .contactPhoto{
-        width: 40%;
-    }
-    .otherBtn{
-        padding: 15px 25px;
-        margin: 5px 5px;
-        font-size: 15px;
-    }
-    
-    .heroP{
-        text-align: start;
-    }
-    .iconright a{
-        padding: 0;
-    }
-   
-    .iconright .fab{
-        padding: 5px;
-        margin: 0;
-    }
-    .liveLinks{
-        flex-wrap: wrap;
-    }
-  
-}
-@media screen and (max-width: 1137px){
-    .rightContainer{
-        display: none;
-    }
-    .leftContainer{
-        border-bottom-left-radius: 30px;
-        border-top-right-radius: unset;
-        width: 100%;
-    }
-    .icon_container .fab{
-        font-size: 25px;
-    }
-
-}
-@media screen and (max-width: 1606px){
-    .heroContent h1{
-        font-size: 40px;
-        line-height: 49px;
     }
     p{
+        font-size: 12px;
+        /* line-height: 15px; */
+    }
+    h1{
+        font-size: 18px;
+    }
+    h2, .fab{
         font-size: 15px;
     }
-    .tools h2{
-        font-size: 20px;
+    .contactLinks{
+        flex-direction: column;
     }
-    .fab, .fas{
-        font-size: 25px;
+    .otherBtn{
+        margin-bottom: 0;
     }
+}
+@media (max-width: 250px){
     nav{
-        margin-top: 40px;
-    }
-    /* .hamburger{
         display: none;
-    } */
+    }
+
+}
+@media (max-width: 238px){
+    h1{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    h2, .fab{
+        font-size: 12px;
+    }
+
+    p{
+        font-size: 8px;
+    }
+  
     
 }
+
 

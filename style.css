@@ -29,7 +29,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 body{
     background-color: var(--main-bg-color);
     color: black;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 21px;
     /* max-width: 1445px; */
     width: 100%;
@@ -252,11 +252,11 @@ p.featuredDesc, .skillTitle{
     
 }
 .projectContainer{
-    display: flex;
-    justify-content: space-between;
+
+    display: grid;
+    grid-template-columns: 2fr 2fr;
     height: 100%;
     padding: 30px;
-
 
 }
 .cardImage{
@@ -480,6 +480,14 @@ footer p{
         font-size: 12px;
         line-height: 17px
     }
+    .right-container{
+        display: none;
+    }
+    .left-container{
+        width: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 20px;
+    }
     .skillscontainer ul{
         flex-direction: column;
    }
@@ -487,8 +495,8 @@ footer p{
        padding: 30px;
    }   
    .projectContainer{
-       flex-direction: column;
-       padding: 0 30px;
+        grid-template-columns: 1fr;
+       padding: 50px;
    }
    .formbox{
        width: 100%;
@@ -522,14 +530,8 @@ footer p{
 @media (max-width: 768px) {
 	/* rules here apply to devices from 0px to 768px (inclusive) */
 
-    .right-container{
-        display: none;
-    }
-    .left-container{
-        width: 100%;
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 20px;
-    }
+   
+    
     h1{
         font-size: 25px;
         line-height: 34px;
